@@ -202,7 +202,7 @@ body{
 }
 
 .important{
-    color: #d144db;
+    color: #7414ac;
 }
 
 /* PARCOURS */
@@ -232,7 +232,7 @@ body{
     font-weight: 500;
     font-family: "Zen Dots", sans-serif;
     font-size: 3rem;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 
 .title-competences i,
