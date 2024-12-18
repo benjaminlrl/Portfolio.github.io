@@ -202,7 +202,7 @@ body{
 }
 
 .important{
-    color: #d144db
+    color:#470070;
 }
 
 /* PARCOURS */
@@ -282,10 +282,14 @@ body{
 
 .competences{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+
 .competence img{
-    width: 150px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 
