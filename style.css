@@ -6,15 +6,14 @@
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 50px;
 }
 
 ::-webkit-scrollbar-track {
     background: #2e2e2e; 
     border-radius: 10px;
     margin: -4px 0; 
-    padding: 5px;
 }
 
 
@@ -85,7 +84,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: .9rem;
-    color: #ffffffbe;
+    color: #ffffff77;
     text-decoration: none;
     transition: ease-in-out .3s;
 }
@@ -254,6 +253,7 @@ body{
     width: 55%;
 }
 
+.title-langue,
 .title-competences,
 .title-parcours{
     display: flex;
@@ -266,9 +266,17 @@ body{
     margin-bottom: 15%;
 }
 
+.title-langue i,
 .title-competences i,
 .title-parcours i{
     margin-right: 10px;
+}
+
+.title-langue i{
+    font-size: 60px;
+    background: linear-gradient(#7c00c4, #fa67ff 100%);/* Dégradé */
+    -webkit-background-clip: text;  /* Appliquer le dégradé au texte */
+    color: transparent;
 }
 
 .formation{
@@ -317,13 +325,15 @@ body{
     align-items: center;
 }
 
-
-.competence img{
-    width: 100px;
-    border-radius: 5px;
+.langue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #ffffffc5;
 }
-
-
 
 /* FOOTER */
 .footer{
@@ -339,8 +349,8 @@ body{
 .footer h3{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: .9rem;
-    letter-spacing: .2rem;
+    font-size: 1rem;
+    letter-spacing: .1rem;
 }
 
 
