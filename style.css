@@ -31,6 +31,11 @@
 body{
     min-height: 100vh;
     width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper-acceuil{
+    width: 100%;
 }
 
 .section-acceuil{
@@ -43,7 +48,8 @@ body{
         url('img/bg-section-acceuil.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh;  
+    animation: bg-zoomOut 1s  ease-out forwards;
 }
 
 /* header-acceuil*/
@@ -100,7 +106,21 @@ body{
     margin: 0 10px;
     color: #403B58;
     transition: ease-in-out .3s;
+    position: relative; 
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
+
+.contact1{
+    animation: slide-down-item 2s  ease-out forwards;
+}
+.contact2{
+    animation: slide-down-item 2.1s ease-out forwards;
+}
+.contact3{
+    animation: slide-down-item 2.3s ease-out forwards;
+}
+
 .item-contact i:hover{
     color: #fff;
 }
@@ -120,6 +140,7 @@ body{
     font-family: "Zen Dots", sans-serif;
     text-align: center;
     text-shadow: #0000007e 0 0 10px;
+    animation: slide-down 2s ease-in-out;
 }
 
 .main-status{
@@ -129,6 +150,7 @@ body{
     letter-spacing: .5rem;
     font-family: "Share Tech Mono", sans-serif;
     text-align: center;
+    animation: opacity ease-in-out 2.2s;
 }
 
 .status{
@@ -151,6 +173,15 @@ body{
     width: 180px;
     text-align: center;
     box-shadow: #000000a9 0 0 25px;
+    
+}
+
+.status-gauche{
+    animation: slide-diagonale-gauche ease-out 2s;
+}
+
+.status-droite{
+    animation: slide-diagonale-droite ease-out 2s;
 }
 
 .icone-down i{
@@ -311,3 +342,62 @@ body{
     font-size: .9rem;
     letter-spacing: .2rem;
 }
+
+
+@keyframes slide-down {
+    0% {
+      transform: translateY(-50vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-diagonale-gauche {
+    0% {
+      transform: translateY(-50vh) translateX(-50vw);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+@keyframes slide-diagonale-droite {
+    0% {
+      transform: translateY(-50vh) translateX(50vw);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 0;
+      }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slide-down-item {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes bg-zoomOut {
+    0% {
+      transform: scale(3); /* Taille initiale */
+    }
+    100% {
+      transform: scale(1); /* Dezoom à 50% */
+    }
+  }
