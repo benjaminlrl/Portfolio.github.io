@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 ::before,
 ::after{
@@ -110,14 +114,23 @@ body{
     animation-fill-mode: forwards;
 }
 
-.contact1{
+.drop1{
     animation: slide-down-item 2s  ease-out forwards;
 }
-.contact2{
+.drop2{
     animation: slide-down-item 2.1s ease-out forwards;
 }
-.contact3{
+.drop3{
     animation: slide-down-item 2.3s ease-out forwards;
+}
+.drop4{
+    animation: slide-down-item 2.5s ease-out forwards;
+}
+.drop5{
+    animation: slide-down-item 2.7s ease-out forwards;
+}
+.drop6{
+    animation: slide-down-item 2.9s ease-out forwards;
 }
 
 .item-contact i:hover{
@@ -138,18 +151,22 @@ body{
     font-weight: 600;
     font-family: "Zen Dots", sans-serif;
     text-align: center;
-    text-shadow: #0000007e 0 0 10px;
+    text-shadow: #3636367e 0 0 10px;
     animation: h2-zoomIn 2s ease-in-out;
 }
 
 .main-status{
     font-size: 1.5rem;
-    color: #fff;
+    color: #ffffff8e;
     font-weight: 600;
-    letter-spacing: .5rem;
+    letter-spacing: .3rem;
     font-family: "Share Tech Mono", sans-serif;
     text-align: center;
     animation: opacity ease-in-out 2.2s;
+}
+
+.main-status span{
+    color: #d144db;
 }
 
 .status{
@@ -160,6 +177,7 @@ body{
     font-weight: 500;
     font-family: "Zen Dots", sans-serif;
     font-size: .9rem;
+    margin-bottom: 150px;
     
 }
 
@@ -184,24 +202,27 @@ body{
 }
 
 .icone-down i{
-    margin-top: 150px;
+    margin-left: 50%;
     color: #d144db;
     font-size: 40px;
 }
 
 /* PRESENTATION */
 
+.section-parcours,
+.section-competences,
 .section-presentation{
     background: #000;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .container-presentation{
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 .title-competences i,
@@ -237,14 +258,9 @@ body{
 
 /* PARCOURS */
 
+.section-competences,
 .section-parcours{
-    background: #000;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    padding-top: 15%;
 }
 
 .container-competences,
@@ -263,6 +279,11 @@ body{
     font-weight: 500;
     font-family: "Zen Dots", sans-serif;
     font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.title-langue,
+.title-competences{
     margin-bottom: 15%;
 }
 
@@ -309,20 +330,13 @@ body{
 }
 
 /* COMPETENCES */
-.section-competences{
-    background: #000;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
+
 
 .competences{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .langue{
@@ -337,7 +351,7 @@ body{
 
 .section-certification{
     background: #000;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
