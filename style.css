@@ -139,7 +139,7 @@ body{
     font-family: "Zen Dots", sans-serif;
     text-align: center;
     text-shadow: #0000007e 0 0 10px;
-    animation: slide-down 2s ease-in-out;
+    animation: h2-zoomIn 2s ease-in-out;
 }
 
 .main-status{
@@ -232,7 +232,7 @@ body{
 }
 
 .important{
-    color: #7414ac;
+    color: #d229d8;
 }
 
 /* PARCOURS */
@@ -274,7 +274,7 @@ body{
 
 .title-langue i{
     font-size: 60px;
-    background: linear-gradient(#7c00c4, #fa67ff 100%);/* Dégradé */
+    background: linear-gradient(0.25turn, #7c00c4, #fa67ff 100%);/* Dégradé */
     -webkit-background-clip: text;  /* Appliquer le dégradé au texte */
     color: transparent;
 }
@@ -403,6 +403,7 @@ body{
     }
   }
 
+
   @keyframes slide-down-item {
     0% {
         transform: translateY(-100vh);
@@ -413,11 +414,23 @@ body{
         opacity: 1;
     }
   }
+
   @keyframes bg-zoomOut {
     0% {
-      transform: scale(3); /* Taille initiale */
+      transform: scale(3);
     }
     100% {
-      transform: scale(1); /* Dezoom à 50% */
+      transform: scale(1);
+    }
+  }
+
+  @keyframes h2-zoomIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0.1;
+
+    }
+    100% {
+      transform: scale(1);
     }
   }
