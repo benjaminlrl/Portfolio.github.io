@@ -357,6 +357,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding-top: 10%;
 }
 
 /* FOOTER */
@@ -376,7 +377,6 @@ body{
     font-size: 1rem;
     letter-spacing: .1rem;
 }
-
 
 @keyframes slide-down {
     0% {
