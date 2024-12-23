@@ -334,8 +334,9 @@ body{
 
 .competences{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 150px;
 }
 
